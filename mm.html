@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#animate").click(function(){
+        $("div").animate({left: '250px',background: '#FF0000'});
+		
+    });
+	
+	$("#animateBack").click(function(){
+        $("div").animate({left: '0px',background: '#98bf21'});
+		
+    });
+	
+	$("#drink").click(function(){
+        $("#p1").css("color", "blue").slideUp(2500).slideDown(3000);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script> 
+</head>
+<body>
+
+<button id="animate">Start Animation</button>
+<button id="animateBack">Rewind</button>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="drink">Drink</button>
+
+<p>Varun Sharma</p>
+<p id="p1">Student-Id C0703804</p>
+<p>My hobbies are listening to Music,watch youtube videos,travelling <br> Photography<br> 
+
+
+<img src="mansotra/mansotra.jpg" alt="relax" style="width:500px;height:600px;">
+</body>
+</html>
